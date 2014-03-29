@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body dir="rtl">
+    <form id="form1" runat="server">
+    <div id="Header">
+        <table style="width: auto; border: 0; padding: 10px;">
+            <tr>
+                <td class="HeaderCell">
+                    שלום
+                    <asp:Label ID="lblUserName" runat="server" Text="אורח"></asp:Label>
+                </td>
+                <td class="HeaderCell">
+                    <asp:LinkButton ID="btnLogin" runat="server" PostBackUrl="~/Login.aspx">התחברות</asp:LinkButton>
+                </td>
+                <td class="HeaderCell">
+                    <asp:LinkButton ID="btnLogout" runat="server" PostBackUrl="~/Logout.aspx">התנתקות</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="Content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <a href="SubmitQuestion.aspx">SubmitQuestion.aspx</a>
+    </form>
+</body>
+</html>

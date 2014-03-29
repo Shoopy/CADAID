@@ -1,0 +1,65 @@
+﻿body
+{
+    font-family: Tahoma;
+    font-size: small;
+    font-weight: bold;
+}
+
+/*
+.voteButton:disabled
+{
+    cursor: default;
+}
+*/
+
+.disabledButton:hover
+{
+    cursor: default;
+}
+/*
+#PanelThreads
+{
+    width: 700px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+*/
+
+#Content
+{
+    width: 1000px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+#Header
+{
+    background-color: #474747;
+    width: 100%;
+    height: auto;
+    top: 0;
+    margin: auto;
+    color: White;
+}
+
+.HeaderCell
+{
+    padding: 5px;
+}
+
+#btnLogin, #btnLogout
+{
+    color: White;
+}
+#Login1
+{
+    width:300px;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+}
